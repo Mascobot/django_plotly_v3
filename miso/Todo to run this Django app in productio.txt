@@ -1,0 +1,14 @@
+Todo to run this Django app in production:
+
+1. Set up as global variables the Firebase credentials in views.py script.
+2. Set up the global environment variable for Google cloud storage used in file google_cloud.py
+3. In settings.py change debug to False.
+4. SECRET_KEY in seetings.py to be converted to an OS variable.
+5. There's no SQLite or Postgres database in this app.
+6. Run:
+  python manage.py collectstatic
+  python manage.py makemigrations 
+  python manage.py migrate  
+7. Follow STEP by STEP this Django instruction to deploy app in production: https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
+
+8. Follow Render instructions to deploy Django app on Render: https://render.com/docs/deploy-django

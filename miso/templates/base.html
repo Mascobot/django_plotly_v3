@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<head>
+    <title>Miso.Tools</title>
+    <link rel="icon" href="images/icon-black.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Financial Market Intelligence" name="description" />
+    <meta content="" name="keywords" />
+    <meta content="" name="author" />
+    <!-- CSS Files
+    ================================================== -->
+    <link id="bootstrap" href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" type="text/css" />
+    <link id="bootstrap-grid" href="{% static "css/bootstrap-grid.min.css" %}" rel="stylesheet" type="text/css" />
+    <link id="bootstrap-reboot" href="{% static "css/bootstrap-reboot.min.css" %}" rel="stylesheet" type="text/css" />
+    <link href="{% static "css/animate.css" %}" rel="stylesheet" type="text/css" />
+    <link href="{% static "css/owl.carousel.css" %}" rel="stylesheet" type="text/css" />
+    <link href="{% static "css/owl.theme.css" %}" rel="stylesheet" type="text/css" />
+    <link href="{% static "css/owl.transitions.css" %}" rel="stylesheet" type="text/css" />
+    <link href="{% static "css/magnific-popup.css" %}" rel="stylesheet" type="text/css" />
+    <link href="{% static "css/jquery.countdown.css" %}" rel="stylesheet" type="text/css" />
+    <link href="{% static "css/style.css" %}" rel="stylesheet"type="text/css" />
+    <link href="{% static "css/de-retro.css" %}" rel="stylesheet" type="text/css" />
+    <!-- color scheme -->   
+    <link id="colors" href="{% static "css/colors/scheme-05.css" %}" rel="stylesheet" type="text/css" />
+    <link href="{% static "css/coloring.css" %}" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="de-retro">
+    <div id="wrapper">
+        {% include 'partials/_topbar.html' %}
+        <!-- content begin -->
+            <!-- section begin -->
+            <section >
+            <!-- section close -->
+            <!-- plotly section goes here -->
+            <div>
+                {% block content %}
+                {% endblock %}
+            </div>
+        </section>
+            <a href="#" id="back-to-top"></a>
+            {% include 'partials/_footer.html' %}
+    </div>
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="{% static "js/jquery.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.bundle.min.js" %}"></script>
+    <script src="{% static "js/wow.min.js" %}"></script>
+    <script src="{% static "js/jquery.isotope.min.js" %}"></script>
+    <script src="{% static "js/easing.js" %}"></script>
+    <script src="{% static "js/owl.carousel.js" %}"></script>
+    <script src="{% static "js/validation.js" %}"></script>
+    <script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+    <script src="{% static "js/enquire.min.js" %}"></script>
+    <script src="{% static "js/jquery.plugin.js" %}"></script>
+    <script src="{% static "js/jquery.countTo.js" %}"></script>
+    <script src="{% static "js/jquery.countdown.js" %}"></script>
+    <script src="{% static "js/jquery.lazy.min.js" %}"></script>
+    <script src="{% static "js/jquery.lazy.plugins.min.js" %}"></script>
+    <script src="{% static "js/designesia.js" %}"></script>
+
+</body>
+</html>
